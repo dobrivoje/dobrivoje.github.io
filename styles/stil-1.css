@@ -126,6 +126,10 @@ h4 {
     font-family: Montserrat, sans-serif;
     font-size: 14px;
 }
+.podmeni ul li a {
+    color: #818181 !important;
+    background: #f6f6f6 !important;
+}
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f4511e !important;
