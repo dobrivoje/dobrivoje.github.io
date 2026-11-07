@@ -16,8 +16,8 @@ Its font files are unchanged. No Bootstrap 3 component CSS or JavaScript is load
 
 Load the Bootstrap stylesheet, then the Glyphicons stylesheet, then the site
 stylesheet. The deferred Bootstrap bundle runs before `scripts/site.js`, which
-handles scrollspy and reveal animations without jQuery. Native anchor links and
-CSS provide smooth scrolling; reduced-motion preferences are respected.
+handles scrollspy and reveal animations without jQuery. Navigation and back-to-top links use a 900ms JavaScript scroll animation;
+modified clicks retain browser behavior and reduced-motion preferences are respected.
 
 Google Fonts remain external HTTPS stylesheets. Google Maps uses an HTTPS iframe
 for the original coordinates, with localized titles and lazy loading; no Google

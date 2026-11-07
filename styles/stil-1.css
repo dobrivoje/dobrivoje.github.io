@@ -31,6 +31,21 @@ ul, ol { padding-left: 40px; margin-top: 0; margin-bottom: 10px; }
 .bg-grey { background-color: #f6f6f6; }
 .logo-small { color: #f4511e; font-size: 50px; }
 .logo { color: #f4511e; font-size: 200px; }
+/* Icons precede the copy on phones; both share the right column on desktop. */
+#about > .row, #values > .row {
+    max-width: 850px;
+    margin-inline: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#about > .row > div, #values > .row > div { width: 100%; }
+#about .intro-icon, #values .intro-icon { margin: 0 0 24px; }
+#about h2, #values h2 { margin-top: 0; margin-bottom: 24px; }
+#about h4, #values h4 { margin-top: 0; margin-bottom: 16px; }
+#about p, #values p { margin-bottom: 24px; }
+#values p:last-child { margin-bottom: 0; }
+#about .btn-lg { margin-bottom: 0; }
 .project-card {
     display: block;
     padding: 0 0 15px;
@@ -117,6 +132,15 @@ footer .glyphicon { font-size: 20px; margin-bottom: 20px; color: #f4511e; }
 .slideanim.revealed { animation: reveal-up 1s; }
 @keyframes reveal-up { from { opacity: 0; transform: translateY(70%); } to { opacity: 1; transform: translateY(0); } }
 @media (min-width: 768px) {
+    #about > .row, #values > .row {
+        max-width: none;
+        margin-inline: -15px;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+    #about > .row > .intro-copy, #values > .row > .intro-copy { order: 0; width: 66.66666667%; }
+    #about > .row > .intro-icon, #values > .row > .intro-icon { order: 1; width: 33.33333333%; margin: 0; }
     .container { max-width: 750px; }
     .site-hero h1 { font-size: 63px; }
     .carousel-indicators { bottom: 20px; }
@@ -133,6 +157,10 @@ footer .glyphicon { font-size: 20px; margin-bottom: 20px; color: #f4511e; }
 @media (max-width: 768px) {
     .col-md-4 { text-align: center; margin: 25px 0; }
     .btn-lg { width: 100%; margin-bottom: 35px; }
+}
+@media (max-width: 767.98px) {
+    #about, #values { padding: 40px 20px; }
+    #about > .row, #values > .row { margin-inline: -15px; }
 }
 @media (max-width: 480px) { .logo { font-size: 150px; } }
 @media (prefers-reduced-motion: reduce) {
