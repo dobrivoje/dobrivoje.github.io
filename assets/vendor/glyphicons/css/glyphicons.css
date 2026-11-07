@@ -1,0 +1,17 @@
+/* Glyphicons from Bootstrap 3.4.1; retained to preserve the original icons. See ../LICENSE. */
+@font-face{font-family:"Glyphicons Halflings";src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"),url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"),url(../fonts/glyphicons-halflings-regular.woff) format("woff"),url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")}
+.glyphicon{position:relative;top:1px;display:inline-block;font-family:"Glyphicons Halflings";font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.glyphicon-envelope:before{content:"\2709"}
+.glyphicon-user:before{content:"\e008"}
+.glyphicon-lock:before{content:"\e033"}
+.glyphicon-map-marker:before{content:"\e062"}
+.glyphicon-chevron-left:before{content:"\e079"}
+.glyphicon-chevron-right:before{content:"\e080"}
+.glyphicon-leaf:before{content:"\e103"}
+.glyphicon-chevron-up:before{content:"\e113"}
+.glyphicon-certificate:before{content:"\e124"}
+.glyphicon-wrench:before{content:"\e136"}
+.glyphicon-phone:before{content:"\e145"}
+.glyphicon-flash:before{content:"\e162"}
+.glyphicon-tower:before{content:"\e184"}
+.glyphicon-apple:before{content:"\f8ff"}

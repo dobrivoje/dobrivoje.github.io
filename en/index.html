@@ -4,41 +4,41 @@
         <title>Dobrivoje Prtenjak, Superb Apps CEO</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/vendor/bootstrap-5.3.8/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-        <script src="../assets/vendor/jquery-1.12.2/jquery.min.js"></script>
-        <script src="../assets/vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="../assets/vendor/bootstrap-5.3.8/js/bootstrap.bundle.min.js" defer></script>
+        <script src="../scripts/site.js" defer></script>
 
+        <link href="../assets/vendor/glyphicons/css/glyphicons.css" rel="stylesheet" type="text/css"/>
         <link href="../styles/stil-1.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <body>
 
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav id="mainNav" class="navbar navbar-expand-xl fixed-top">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                    <a class="navbar-brand" href="../index.html">srpski</a>
-                </div>
+                <a class="navbar-brand" href="../index.html">srpski</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+                        aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#myPage">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#values">VALUES</a></li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#pricing">PRICES</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#myPage">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#values">VALUES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">PRICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="jumbotron text-center">
+        <div id="myPage" class="site-hero text-center">
             <h1>OFFICIAL PAGE</h1> 
             <p>Dobrivoje Prtenjak <br>
                 software engineer
@@ -53,10 +53,13 @@
 
         <div id="about" class="container-fluid">
             <div class="row">
-                <div class="col-sm-8">
-                    <h2>About</h2><br>
+                <div class="intro-icon">
+                    <span class="glyphicon glyphicon-user logo"></span>
+                </div>
+                <div class="intro-copy">
+                    <h2>About</h2>
                     <h4>The information below are only from people in my closest environment  
-                        which is about of 1,200 souls</h4><br>
+                        which is about of 1,200 souls</h4>
                     <p>
                         I'm the best , smartest , most beautiful and most valuable character
                         that exists  !  I'm such a  capacity ! <br>
@@ -64,36 +67,30 @@
                         <strong>Me myself and I !</strong>
                     </p>
 
-                    <br>
-                    <button type="button" class="btn btn-default btn-lg" onclick="location.href = '#contact'">
+                    <button type="button" class="btn btn-outline-secondary btn-lg" onclick="location.href = '#contact'">
                         Let's stay in touch
                     </button>
-                </div>
-                <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-user logo"></span>
                 </div>
             </div>
         </div>
 
         <div id="values" class="container-fluid bg-grey">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="intro-icon">
                     <span class="glyphicon glyphicon-apple logo slideanim"></span>
                 </div>
-                <div class="col-sm-8">
-                    <h2>VALUES</h2><br>
-                    <h4><strong>VISION</strong><br></h4>
+                <div class="intro-copy">
+                    <h2>VALUES</h2>
+                    <h4><strong>VISION</strong></h4>
                     <p>I just adore this term as it sounds superior just like my brief presentation <a href="#about">above</a> </p>
 
-                    <br>
-                    <h4><strong>MISSION</strong><br></h4>
+                    <h4><strong>MISSION</strong></h4>
                     <p>Perhaps even more irritating term that always goes in pair with a vision.<br>
                         The mission may have a surgeon, peacemaker or even cosmonaut.<br><br>
                         Information technologies should only make life easier for people who break up with scalers
                         and <strong><i>that's it</i></strong>
                     </p>
-                    <br>
-                    <br>
+
                 </div>
             </div>
         </div>
@@ -102,7 +99,7 @@
             <h2>SERVICES</h2>
             <br>
             <div class="row slideanim">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <span class="glyphicon glyphicon-tower logo-small"></span>
                     <h4>STRONG CHARACTER</h4>
                     <p>
@@ -114,7 +111,7 @@
                         <Strong> I know what it's all about, I've been watching these situations much over the years </strong> <br>
                     </p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <span class="glyphicon glyphicon-flash logo-small"></span>
                     <h4>ENERGY</h4>
                     <p>
@@ -126,7 +123,7 @@
                         <span style="color: #999999;">more than 50 of them,... </span>
                     </p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <span class="glyphicon glyphicon-lock logo-small"></span>
                     <h4>WORK</h4>
                     <p>
@@ -139,7 +136,7 @@
             </div>
             <br><br>
             <div class="row slideanim">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <span class="glyphicon glyphicon-leaf logo-small"></span>
                     <h4>ENVIRONMENT</h4>
                     <p>
@@ -149,7 +146,7 @@
                         in the container
                     </p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <span class="glyphicon glyphicon-certificate logo-small"></span>
                     <h4>CERTIFICATIONS</h4>
 
@@ -166,7 +163,7 @@
                     </ul>
 
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <span class="glyphicon glyphicon-wrench logo-small"></span>
                     <h4 style="color:#303030;">HARD WORK</h4>
                     <p>
@@ -188,78 +185,78 @@
             <h2>Portfolio</h2><br>
             <h4>Feel a bit of taste of what I have been doing lately </h4><br>
             <div class="row text-center slideanim">
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/ws/ws-1.jpg"  alt="mf" width="400" height="300">
                         <p><strong>MOL Serbia Wholesale App</strong></p>
                         <p>Wholesale CRM system</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/mf/mf-1.jpg" alt="mf" width="400" height="300">
                         <p><strong>MOL Serbia SW Platform</strong></p>
                         <p>Retail Software Module</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/mf/mf-4.jpg" alt="mf" width="400" height="300">
                         <p><strong>MOL Serbia SW Platform app</strong></p>
                         <p>Retail Software Module</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/mf/mf-9.jpg" alt="mf" width="400" height="300">
                         <p><strong>MOL Serbia SW Platform app</strong></p>
                         <p>Retail Software Module</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/akk/ers/ers-1.jpg" alt="ers" width="400" height="300">
                         <p><strong>Autokomerc DOO</strong></p>
                         <p>Service Tracking Software</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/akk/ers/ers-2.jpg" alt="ers" width="400" height="300">
                         <p><strong>Autokomerc DOO</strong></p>
                         <p>Service Tracking Software</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/akk/kpi/kpi-1.jpg" alt="ers" width="400" height="300">
                         <p><strong>Autokomerc DOO</strong></p>
                         <p>Key Performance Indicators</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/akk/kpi/kpi-2.jpg" alt="ers" width="400" height="300">
                         <p><strong>Autokomerc DOO</strong></p>
                         <p>Key Performance Indicators</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/akk/kpi/kpi-3.jpg" alt="ers" width="400" height="300">
                         <p><strong>Autokomerc DOO</strong></p>
                         <p>Key Performance Indicators</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/akk/kpi/kpi-4.jpg" alt="ers" width="400" height="300">
                         <p><strong>Autokomerc DOO</strong></p>
                         <p>Key Performance Indicators</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/akk/kpi/kpi-5.jpg" alt="ers" width="400" height="300">
                         <p><strong>Autokomerc DOO</strong></p>
                         <p>Key Performance Indicators</p>
@@ -267,57 +264,57 @@
                 </div>
 
 
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/rucaj/1.jpg" alt="rucaj" width="400" height="300">
                         <p>rucaj.com - Catering app</p>
                         <p><strong>rucaj.com</strong></p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/rucaj/2.jpg" alt="rucaj" width="400" height="300">
                         <p>rucaj.com - Catering app</p>
                         <p><strong>rucaj.com</strong></p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/rucaj/3.jpg" alt="rucaj" width="400" height="300">
                         <p>rucaj.com - Catering app</p>
                         <p><strong>rucaj.com</strong></p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/rucaj/4.jpg" alt="rucaj" width="400" height="300">
                         <p>rucaj.com - Catering app</p>
                         <p><strong>rucaj.com</strong></p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/rucaj/5.jpg" alt="rucaj" width="400" height="300">
                         <p>rucaj.com - Catering app</p>
                         <p><strong>rucaj.com</strong></p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/rucaj/6.jpg" alt="rucaj" width="400" height="300">
                         <p>rucaj.com - Catering app</p>
                         <p><strong>rucaj.com</strong></p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/rucaj/7.jpg" alt="rucaj" width="400" height="300">
                         <p>rucaj.com - Catering app</p>
                         <p><strong>rucaj.com</strong></p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="card project-card">
                         <img src="../imgs/rucaj/8.jpg" alt="rucaj" width="400" height="300">
                         <p>rucaj.com - Catering app</p>
                         <p><strong>rucaj.com</strong></p>
@@ -328,36 +325,36 @@
 
         <br>
 
-        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide text-center" data-bs-ride="carousel">
             <h2>What other said..</h2>
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+            <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonial 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Testimonial 4"></button>
+                </div>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <h4>"Dobrivoje ? Good as a good day ! "<br><br>
                         <span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span>
                     </h4>
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <h4>"Just one word... WOW !"<br><br>
                         <span style="font-style:normal;">Vučko Aleksandrović, President of the classroom, 7th grade</span>
                     </h4>
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <h4>He told me that his motto is <strong>"As in a dream, then, in a reality"</strong><br>
                         Not really sure what that means, but that's him. Mysterious. <br>
                         <i> ..as my colleague Brstina says : " Are you a creature, or a creator !"</i><br><br>
                         <span style="font-style:normal;">Klara Ljubinkić, Actress, Belgrade</span>
                     </h4>
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <h4>
                         He is one aspiring and arrogant person ! <br>
                         What programs ?! Common !!! Everything is in its place, well organized, menus, images..<br>
@@ -373,13 +370,13 @@
             </div>
 
             <!-- kontrole -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="visually-hidden">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">next</span>
+                <span class="visually-hidden">next</span>
             </a>
         </div>
 
@@ -390,60 +387,60 @@
             </div>
 
             <div class="row slideanim">
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
+                <div class="col-md-4 col-12">
+                    <div class="card pricing-card text-center">
+                        <div class="card-header">
                             <h1>Starter</h1>
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <p><strong>10&#x20AC/page</strong> over 10 pages</p>
                             <p><strong>12&#x20AC/page</strong> 6-10 pages</p>
                             <p><strong>15&#x20AC/page</strong> 3-5 pages</p>
                             <p><strong>20&#x20AC/page</strong> up to 2 page</p>
                             <p><strong> Free  </strong>Chitchat ~ 5 minutes</p>
                         </div>
-                        <div class="panel-footer">
+                        <div class="card-footer">
                             <h3>19.99&#x20AC</h3>
                             <h4>monthly</h4>
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#modal_osnovni">I take this package</button>
+                            <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#modal_osnovni">I take this package</button>
                         </div>
                     </div>      
                 </div>     
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
+                <div class="col-md-4 col-12">
+                    <div class="card pricing-card text-center">
+                        <div class="card-header">
                             <h1>Pro</h1>
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <p><strong>25&#x20AC/page</strong> over 10 pages</p>
                             <p><strong>30&#x20AC/page</strong> 6-10 pages</p>
                             <p><strong>35&#x20AC/page</strong> 3-5 pages</p>
                             <p><strong>40&#x20AC/page</strong> up to 2 page</p>
                             <p><strong> Free  </strong>Chitchat ~ 15 minutes</p>
                         </div>
-                        <div class="panel-footer">
+                        <div class="card-footer">
                             <h3>29.99&#x20AC</h3>
                             <h4>monthly</h4>
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#modal_ostali">I take this package</button>
+                            <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#modal_ostali">I take this package</button>
                         </div>
                     </div>      
                 </div>       
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
+                <div class="col-md-4 col-12">
+                    <div class="card pricing-card text-center">
+                        <div class="card-header">
                             <h1>Premium</h1>
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <p><strong>30&#x20AC/page</strong> over 10 pages</p>
                             <p><strong>40&#x20AC/page</strong> 6-10 pages</p>
                             <p><strong>45&#x20AC/page</strong> 3-5 pages</p>
                             <p><strong>50&#x20AC/page</strong> up to 2 page</p>
                             <p><strong> Free  </strong>Chitchat ~ No limit</p>
                         </div>
-                        <div class="panel-footer">
+                        <div class="card-footer">
                             <h3>49.99&#x20AC</h3>
                             <h4>monthly</h4>
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#modal_ostali">I take this package</button>
+                            <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#modal_ostali">I take this package</button>
                         </div>
                     </div>      
                 </div>    
@@ -456,60 +453,60 @@
             </div>
 
             <div class="row slideanim">
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
+                <div class="col-md-4 col-12">
+                    <div class="card pricing-card text-center">
+                        <div class="card-header">
                             <h1>Starter</h1>
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <p><strong>50&#x20AC/page</strong> over 15 pages</p>
                             <p><strong>100&#x20AC/page</strong> 6-15 pages</p>
                             <p><strong>150&#x20AC/page</strong> 3-5 pages</p>
                             <p><strong>200&#x20AC/page</strong> up to 2 page</p>
                             <p><strong> Free  </strong>Consultations ~ 5 minutes</p>
                         </div>
-                        <div class="panel-footer">
+                        <div class="card-footer">
                             <h3>39.99&#x20AC</h3>
                             <h4>monthly</h4>
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#modal_osnovni">I take this package</button>
+                            <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#modal_osnovni">I take this package</button>
                         </div>
                     </div>      
                 </div>     
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
+                <div class="col-md-4 col-12">
+                    <div class="card pricing-card text-center">
+                        <div class="card-header">
                             <h1>Pro</h1>
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <p><strong>40&#x20AC/page</strong> over 25 pages</p>
                             <p><strong>80&#x20AC/page</strong> 16-25 pages</p>
                             <p><strong>160&#x20AC/page</strong> 6-15 pages</p>
                             <p><strong>320&#x20AC/page</strong> do 5 pages</p>
                             <p><strong> Free </strong>Consultations ~ 15 minutes</p>
                         </div>
-                        <div class="panel-footer">
+                        <div class="card-footer">
                             <h3>99.99&#x20AC</h3>
                             <h4>monthly</h4>
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#modal_ostali">I take this package</button>
+                            <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#modal_ostali">I take this package</button>
                         </div>
                     </div>      
                 </div>       
-                <div class="col-sm-4 col-xs-12">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-heading">
+                <div class="col-md-4 col-12">
+                    <div class="card pricing-card text-center">
+                        <div class="card-header">
                             <h1>Premium</h1>
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <p><strong>30&#x20AC/page</strong> over 50 pages</p>
                             <p><strong>60&#x20AC/page</strong> 25-55 pages</p>
                             <p><strong>120&#x20AC/page</strong> 15-25 pages</p>
                             <p><strong>240&#x20AC/page</strong> do 15 pages</p>
                             <p><strong> Free </strong>Consultations ~ No limit</p>
                         </div>
-                        <div class="panel-footer">
+                        <div class="card-footer">
                             <h3>199.99&#x20AC</h3>
                             <h4>monthly</h4>
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#modal_ostali">I take this package</button>
+                            <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#modal_ostali">I take this package</button>
                         </div>
                     </div>      
                 </div>    
@@ -520,58 +517,35 @@
         <div id="contact" class="container-fluid bg-grey">
             <h2 class="text-center">CONTACT</h2>
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-md-5">
                     <p><strong>Contact me </strong></p>
                     <p><span class="glyphicon glyphicon-map-marker"></span> Belgrade, Serbia</p>
                     <p><span class="glyphicon glyphicon-phone"></span> +381 64 2240 814</p>
                     <p><span class="glyphicon glyphicon-envelope"></span> dobri7@gmail.com</p>
                 </div>
-                <div class="col-sm-7 slideanim">
+                <div class="col-md-7 slideanim">
                     <div class="row">
-                        <div class="col-sm-6 form-group">
+                        <div class="col-md-6 mb-3">
                             <input class="form-control" id="name" name="name" placeholder="Your name" type="text" required>
                         </div>
-                        <div class="col-sm-6 form-group">
+                        <div class="col-md-6 mb-3">
                             <input class="form-control" id="email" name="email" placeholder="Your email" type="email" required>
                         </div>
                     </div>
                     <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
                     <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button class="btn btn-default pull-right" type="submit" data-toggle="modal" data-target="#modal_lencuga">Send</button>
+                        <div class="col-md-12 mb-3">
+                            <button class="btn btn-outline-secondary float-end" type="submit" data-bs-toggle="modal" data-bs-target="#modal_lencuga">Send</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="googleMap" style="height:400px;width:100%;"></div>
-
-        <!-- Google Maps -->
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
-        <script>
-                        var myCenter = new google.maps.LatLng(44.7851216, 20.4745886);
-
-                        function initialize() {
-                            var mapProp = {
-                                center: myCenter,
-                                zoom: 12,
-                                scrollwheel: false,
-                                draggable: false,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                            };
-
-                            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-                            var marker = new google.maps.Marker({
-                                position: myCenter,
-                            });
-
-                            marker.setMap(map);
-                        }
-
-                        google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+        <iframe id="googleMap" title="Location map — Belgrade"
+                src="https://maps.google.com/maps?q=44.7851216,20.4745886&amp;z=12&amp;hl=en&amp;output=embed"
+                width="100%" height="400" style="border:0;display:block"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
 
         <footer class="container-fluid text-center">
             <a href="#myPage" title="Idi na početak">
@@ -580,52 +554,17 @@
             <p>Made by Добривоје <a href="http://dobrivoje.github.io/en" title="Dobrivoje Prtenjak 2016">dobrivoje.github.io</a></p>
         </footer>
 
-        <script>
-            $(document).ready(function () {
-                // Add smooth scrolling to all links in navbar + footer link
-                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
 
-                        // Store hash
-                        var hash = this.hash;
-
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 900, function () {
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
-
-                $(window).scroll(function () {
-                    $(".slideanim").each(function () {
-                        var pos = $(this).offset().top;
-
-                        var winTop = $(window).scrollTop();
-                        if (pos < winTop + 600) {
-                            $(this).addClass("slide");
-                        }
-                    });
-                });
-            })
-        </script>
 
         <!-- Modal Obaveštanje Lenčuga 1 -->
-        <div id="modal_lencuga" class="modal fade" role="dialog">
+        <div id="modal_lencuga" class="modal fade" tabindex="-1" aria-labelledby="modal_lencuga_title" aria-hidden="true">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Notification 15% Discount </h4>
+                        <h4 class="modal-title" id="modal_lencuga_title">Notification 15% Discount </h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <p>
@@ -637,7 +576,7 @@
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"> Alright </button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"> Alright </button>
                     </div>
                 </div>
 
@@ -645,14 +584,14 @@
         </div>
 
         <!-- Modal Obaveštanje o Osnovnom paketu  -->
-        <div id="modal_osnovni" class="modal fade" role="dialog">
+        <div id="modal_osnovni" class="modal fade" tabindex="-1" aria-labelledby="modal_osnovni_title" aria-hidden="true">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Notification</h4>
+                        <h4 class="modal-title" id="modal_osnovni_title">Notification</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <p>
@@ -662,7 +601,7 @@
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">I'm not stingy</button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">I'm not stingy</button>
                     </div>
                 </div>
 
@@ -670,14 +609,14 @@
         </div>
 
         <!-- Modal Obaveštanje o ostalim paketima -->
-        <div id="modal_ostali" class="modal fade" role="dialog">
+        <div id="modal_ostali" class="modal fade" tabindex="-1" aria-labelledby="modal_ostali_title" aria-hidden="true">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">That's it !</h4>
+                        <h4 class="modal-title" id="modal_ostali_title">That's it !</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <p>
@@ -686,7 +625,7 @@
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">I' the man !</button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">I' the man !</button>
                     </div>
                 </div>
 
