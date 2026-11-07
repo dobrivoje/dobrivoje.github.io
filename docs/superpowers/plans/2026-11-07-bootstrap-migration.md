@@ -14,7 +14,7 @@
 - Work on bootstrap-migration; no push or merge.
 - Preserve copy, images, orange theme, fonts, section order and 768px column breakpoint.
 - Keep Bootstrap, its JavaScript and icon assets local.
-- Google Maps integration is a known pre-existing issue, outside this migration.
+- User added Google Maps repair during execution: replace the keyless JavaScript API with an HTTPS embedded map at the same coordinates, in both languages.
 
 ## Step 1: Compatible upgrade to 3.4.1
 - [x] Save a 3.3.7 reference for visual comparison.
@@ -24,10 +24,19 @@
 - [x] Commit the verified checkpoint separately.
 
 ## Step 2: Migration to 5.3.8
-- [ ] Vendor official 5.3.8 CSS and JavaScript bundle with source maps and license.
-- [ ] Extract the existing Glyphicons font rules into a standalone local icon stylesheet.
-- [ ] Convert navigation to navbar-expand-md, columns to col-md-*, panels to cards, thumbnails to project cards, carousel items/controls/indicators, modal close buttons and data-bs-* attributes.
-- [ ] Preserve dimensions, typography and spacing through scoped site CSS; keep Bootstrap's modal stacking above the navbar.
-- [ ] Replace inline jQuery scrolling/reveal code with shared scripts/site.js; remove the jQuery dependency and unused Bootstrap 3 assets.
-- [ ] Verify both languages at desktop and mobile widths; verify anchor navigation, initial/hash-load reveals, collapse, modal opening/closing, carousel and local asset resolution.
-- [ ] Request code review, resolve substantive findings, update vendor documentation and commit separately.
+- [x] Vendor official 5.3.8 CSS and JavaScript bundle with source maps and license.
+- [x] Extract the existing Glyphicons font rules into a standalone local icon stylesheet.
+- [x] Convert navigation to navbar-expand-xl (to prevent long-menu wrapping), columns to col-md-*, panels to cards, thumbnails to project cards, carousel items/controls/indicators, modal close buttons and data-bs-* attributes.
+- [x] Preserve dimensions, typography and spacing through scoped site CSS; keep Bootstrap's modal stacking above the navbar.
+- [x] Replace inline jQuery scrolling/reveal code with shared scripts/site.js; remove the jQuery dependency and unused Bootstrap 3 assets.
+- [x] Verify both languages at desktop and mobile widths; verify anchor navigation, initial/hash-load reveals, collapse, modal opening/closing, carousel and local asset resolution.
+- [x] Request code review, resolve substantive findings, update vendor documentation and commit separately.
+
+## Verification notes
+
+- The 3.4.1 checkpoint was verified in both languages; the modal and mobile menu worked.
+- Bootstrap 5 checks cover Serbian desktop navigation, carousel indicators/next control, all modal types, English mobile navigation and pricing, direct hash loads, and the embedded map.
+- Content comparison against the 3.3.7 baseline confirms all paragraphs/headings and image sources are unchanged.
+- Local dependency paths, font references, unique IDs, interaction targets, JS syntax and git whitespace checks pass.
+- Code review found a percentage scrollspy-margin concern and modal close-button alignment; both were addressed. Resize during a modal is handled after the body scroll lock is released.
+- Final commits remain local on bootstrap-migration; no merge or push is performed.
