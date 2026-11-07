@@ -1,19 +1,20 @@
 /* Site theme. Explicit dimensions preserve the original Bootstrap 3 design. */
 html { scroll-behavior: smooth; }
 body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #818181;
+    font: 400 16px/1.55 "IBM Plex Sans", sans-serif;
+    color: #666;
     background: #fff;
 }
-h1, h2, h3, h4 { font-family: inherit; line-height: 1.1; color: inherit; }
-h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; font-weight: 500; }
-h1 { font-size: 36px; }
-h2 { font-size: 24px; text-transform: uppercase; color: #303030; font-weight: 600; margin-bottom: 30px; }
+h1, h2, h3, h4 { font-family: inherit; line-height: 1.2; color: inherit; }
+h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; font-weight: 700; }
+h1 { font-size: 36px; font-weight: 800; }
+h2 { font-size: clamp(28px, 3vw, 40px); text-transform: uppercase; color: #303030; font-weight: 700; margin-bottom: 30px; }
 h3 { font-size: 24px; }
-h4 { font-size: 19px; line-height: 1.375; color: #303030; font-weight: 400; margin-top: 10px; margin-bottom: 30px; }
+h4 { font-size: 18px; line-height: 1.55; color: #303030; font-weight: 500; margin-top: 10px; margin-bottom: 30px; }
 p { margin: 0 0 10px; }
 a { color: #337ab7; text-decoration: none; }
 a:hover, a:focus { color: #23527c; text-decoration: underline; }
+a.btn, a.btn:hover, a.btn:focus { text-decoration: none; }
 strong { font-weight: 700; }
 ul, ol { padding-left: 40px; margin-top: 0; margin-bottom: 10px; }
 .container-fluid { padding: 60px 50px; }
@@ -25,8 +26,9 @@ ul, ol { padding-left: 40px; margin-top: 0; margin-bottom: 10px; }
     color: #fff;
     padding: 100px 25px;
     margin-bottom: 30px;
-    font-family: Montserrat, sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
 }
+.site-hero h1 { font-size: 40px; font-weight: 800; }
 .site-hero p { font-size: 21px; font-weight: 200; margin-bottom: 15px; }
 .bg-grey { background-color: #f6f6f6; }
 .logo-small { color: #f4511e; font-size: 50px; }
@@ -44,6 +46,8 @@ ul, ol { padding-left: 40px; margin-top: 0; margin-bottom: 10px; }
 #about h2, #values h2 { margin-top: 0; margin-bottom: 24px; }
 #about h4, #values h4 { margin-top: 0; margin-bottom: 16px; }
 #about p, #values p { margin-bottom: 24px; }
+#about .about-summary { max-width: 560px; text-align: justify; text-justify: inter-word; }
+#about .about-summary > span { display: block; }
 #values p:last-child { margin-bottom: 0; }
 #about .btn-lg { margin-bottom: 0; }
 .project-card {
@@ -107,8 +111,8 @@ input.form-control { height: 34px; }
     min-height: 50px;
     background: #f4511e;
     border: 0;
-    font: 12px/1.42857143 Montserrat, sans-serif;
-    letter-spacing: 4px;
+    font: 500 12px/1.42857143 "IBM Plex Sans", sans-serif;
+    letter-spacing: 2px;
     --bs-navbar-nav-link-padding-x: 15px;
 }
 .navbar .container { min-height: 50px; }
@@ -142,7 +146,11 @@ footer .glyphicon { font-size: 20px; margin-bottom: 20px; color: #f4511e; }
     #about > .row > .intro-copy, #values > .row > .intro-copy { order: 0; width: 66.66666667%; }
     #about > .row > .intro-icon, #values > .row > .intro-icon { order: 1; width: 33.33333333%; margin: 0; }
     .container { max-width: 750px; }
-    .site-hero h1 { font-size: 63px; }
+    .site-hero h1 { font-size: 64px; }
+    #about > .row > .intro-copy, #values > .row > .intro-copy {
+        max-width: 680px;
+        padding-right: 40px;
+    }
     .carousel-indicators { bottom: 20px; }
 }
 @media (min-width: 992px) { .container { max-width: 970px; } }
@@ -161,6 +169,7 @@ footer .glyphicon { font-size: 20px; margin-bottom: 20px; color: #f4511e; }
 @media (max-width: 767.98px) {
     #about, #values { padding: 40px 20px; }
     #about > .row, #values > .row { margin-inline: -15px; }
+    #about .about-summary { text-align: left; }
 }
 @media (max-width: 480px) { .logo { font-size: 150px; } }
 @media (prefers-reduced-motion: reduce) {
